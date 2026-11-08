@@ -1,0 +1,2239 @@
+[
+  {
+    "service": "LegacySearch",
+    "name": "whoSawAlsoSaw",
+    "id": "LegacySearch.whoSawAlsoSaw",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/crossselling/whosawalsosaw/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/crossselling/whosawalsosaw/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "whoSawAlsoBought",
+    "id": "LegacySearch.whoSawAlsoBought",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/crossselling/whosawalsobought/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/crossselling/whosawalsobought/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "whoBoughtAlsoBought",
+    "id": "LegacySearch.whoBoughtAlsoBought",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/crossselling/whoboughtalsobought/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/crossselling/whoboughtalsobought/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "buyTogether",
+    "id": "LegacySearch.buyTogether",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/crossselling/showtogether/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/crossselling/showtogether/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "accessories",
+    "id": "LegacySearch.accessories",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/crossselling/accessories/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/crossselling/accessories/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "similars",
+    "id": "LegacySearch.similars",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/crossselling/similars/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/crossselling/similars/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "suggestions",
+    "id": "LegacySearch.suggestions",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/crossselling/suggestions/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/crossselling/suggestions/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "searchByPath",
+    "id": "LegacySearch.searchByPath",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/search/{search}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "search",
+        "in": "path",
+        "style": "simple",
+        "greedy": true
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/search/-search-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "search",
+    "id": "LegacySearch.search",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/search",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "_from",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "_to",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "ft",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "fq",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "O",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/search"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "getProductBySlug",
+    "id": "LegacySearch.getProductBySlug",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/search/{product-text-link}/p",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "product-text-link",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/search/-product-text-link-/p"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "getProductOffers",
+    "id": "LegacySearch.getProductOffers",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/offers/{productId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/offers/-productId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "getSkuOffers",
+    "id": "LegacySearch.getSkuOffers",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/products/offers/{productId}/sku/{skuId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "skuId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/offers/-productId-/sku/-skuId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "getCategoryFacets",
+    "id": "LegacySearch.getCategoryFacets",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/facets/category/{categoryId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "categoryId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "_from",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "_to",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/facets/category/-categoryId-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "getFacets",
+    "id": "LegacySearch.getFacets",
+    "method": "GET",
+    "path": "/api/catalog_system/pub/facets/search/{term}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "map",
+        "in": "query",
+        "style": "form",
+        "explode": true
+      },
+      {
+        "name": "term",
+        "in": "path",
+        "style": "simple"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/facets/search/-term-"
+  },
+  {
+    "service": "LegacySearch",
+    "name": "autocomplete",
+    "id": "LegacySearch.autocomplete",
+    "method": "GET",
+    "path": "/buscaautocomplete",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "productNameContains",
+        "in": "query",
+        "style": "form",
+        "explode": true
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/search-api#get-/buscaautocomplete"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "topSearches",
+    "id": "IntelligentSearch.topSearches",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/top-searches",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/top-searches"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "autocomplete",
+    "id": "IntelligentSearch.autocomplete",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/autocomplete-suggestions",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/autocomplete-suggestions"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "suggestions",
+    "id": "IntelligentSearch.suggestions",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/search-suggestions",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/search-suggestions"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "correction",
+    "id": "IntelligentSearch.correction",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/correction-search",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/correction-search"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "banners",
+    "id": "IntelligentSearch.banners",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/banners/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/banners/-facets-"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "search",
+    "id": "IntelligentSearch.search",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/product-search/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "count",
+        "in": "query"
+      },
+      {
+        "name": "page",
+        "in": "query"
+      },
+      {
+        "name": "sort",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      },
+      {
+        "name": "hideUnavailableItems",
+        "in": "query"
+      },
+      {
+        "name": "simulationBehavior",
+        "in": "query"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      },
+      {
+        "name": "regionId",
+        "in": "query"
+      },
+      {
+        "name": "country",
+        "in": "query"
+      },
+      {
+        "name": "zip-code",
+        "in": "query"
+      },
+      {
+        "name": "coordinates",
+        "in": "query"
+      },
+      {
+        "name": "pickupPoint",
+        "in": "query"
+      },
+      {
+        "name": "deliveryZonesHash",
+        "in": "query"
+      },
+      {
+        "name": "pickupPointsHash",
+        "in": "query"
+      },
+      {
+        "name": "dpPreview",
+        "in": "query"
+      },
+      {
+        "name": "utmSource",
+        "in": "query"
+      },
+      {
+        "name": "utmCampaign",
+        "in": "query"
+      },
+      {
+        "name": "utmiCampaign",
+        "in": "query"
+      },
+      {
+        "name": "campaigns",
+        "in": "query"
+      },
+      {
+        "name": "priceTables",
+        "in": "query"
+      },
+      {
+        "name": "showSponsored",
+        "in": "query"
+      },
+      {
+        "name": "sponsoredCount",
+        "in": "query"
+      },
+      {
+        "name": "advertisementPlacement",
+        "in": "query"
+      },
+      {
+        "name": "repeatSponsoredProducts",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/product-search/-facets-"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "facets",
+    "id": "IntelligentSearch.facets",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/facets/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      },
+      {
+        "name": "hideUnavailableItems",
+        "in": "query"
+      },
+      {
+        "name": "removeHiddenFacets",
+        "in": "query"
+      },
+      {
+        "name": "sc",
+        "in": "query"
+      },
+      {
+        "name": "regionId",
+        "in": "query"
+      },
+      {
+        "name": "country",
+        "in": "query"
+      },
+      {
+        "name": "zip-code",
+        "in": "query"
+      },
+      {
+        "name": "coordinates",
+        "in": "query"
+      },
+      {
+        "name": "pickupPoint",
+        "in": "query"
+      },
+      {
+        "name": "deliveryZonesHash",
+        "in": "query"
+      },
+      {
+        "name": "pickupPointsHash",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/facets/-facets-"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "getProduct",
+    "id": "IntelligentSearch.getProduct",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/products",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "sc",
+        "in": "query"
+      },
+      {
+        "name": "value",
+        "in": "query"
+      },
+      {
+        "name": "field",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      },
+      {
+        "name": "simulationBehavior",
+        "in": "query"
+      },
+      {
+        "name": "hideUnavailableItems",
+        "in": "query"
+      },
+      {
+        "name": "productClusterId",
+        "in": "query"
+      },
+      {
+        "name": "productOriginVtex",
+        "in": "query"
+      },
+      {
+        "name": "show-invisible-items",
+        "in": "query"
+      },
+      {
+        "name": "regionId",
+        "in": "query"
+      },
+      {
+        "name": "country",
+        "in": "query"
+      },
+      {
+        "name": "zip-code",
+        "in": "query"
+      },
+      {
+        "name": "coordinates",
+        "in": "query"
+      },
+      {
+        "name": "pickupPoint",
+        "in": "query"
+      },
+      {
+        "name": "deliveryZonesHash",
+        "in": "query"
+      },
+      {
+        "name": "pickupPointsHash",
+        "in": "query"
+      },
+      {
+        "name": "utmSource",
+        "in": "query"
+      },
+      {
+        "name": "utmCampaign",
+        "in": "query"
+      },
+      {
+        "name": "utmiCampaign",
+        "in": "query"
+      },
+      {
+        "name": "campaigns",
+        "in": "query"
+      },
+      {
+        "name": "priceTables",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/products"
+  },
+  {
+    "service": "IntelligentSearch",
+    "name": "pickupPointAvailability",
+    "id": "IntelligentSearch.pickupPointAvailability",
+    "method": "GET",
+    "path": "/api/intelligent-search/v1/pickup-point-availability/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      },
+      {
+        "name": "deliveryZonesHash",
+        "in": "query"
+      },
+      {
+        "name": "pickupPointsHash",
+        "in": "query"
+      },
+      {
+        "name": "country",
+        "in": "query"
+      },
+      {
+        "name": "zip-code",
+        "in": "query"
+      },
+      {
+        "name": "coordinates",
+        "in": "query"
+      },
+      {
+        "name": "pickupPoint",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api-v1#get-/pickup-point-availability/-facets-"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "topSearches",
+    "id": "IntelligentSearchLegacy.topSearches",
+    "method": "GET",
+    "path": "/api/io/_v/api/intelligent-search/top_searches",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/top_searches"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "autocomplete",
+    "id": "IntelligentSearchLegacy.autocomplete",
+    "method": "GET",
+    "path": "/api/io/_v/api/intelligent-search/autocomplete_suggestions",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/autocomplete_suggestions"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "correction",
+    "id": "IntelligentSearchLegacy.correction",
+    "method": "GET",
+    "path": "/api/io/_v/api/intelligent-search/correction_search",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/correction_search"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "banners",
+    "id": "IntelligentSearchLegacy.banners",
+    "method": "GET",
+    "path": "/api/io/_v/api/intelligent-search/banners/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/banners/-facets-"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "suggestions",
+    "id": "IntelligentSearchLegacy.suggestions",
+    "method": "GET",
+    "path": "/api/io/_v/api/intelligent-search/search_suggestions",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/search_suggestions"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "search",
+    "id": "IntelligentSearchLegacy.search",
+    "method": "GET",
+    "path": "/api/io/_v/api/intelligent-search/product_search/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "count",
+        "in": "query"
+      },
+      {
+        "name": "page",
+        "in": "query"
+      },
+      {
+        "name": "sort",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      },
+      {
+        "name": "hideUnavailableItems",
+        "in": "query"
+      },
+      {
+        "name": "simulationBehavior",
+        "in": "query"
+      },
+      {
+        "name": "showSponsored",
+        "in": "query"
+      },
+      {
+        "name": "sponsoredCount",
+        "in": "query"
+      },
+      {
+        "name": "advertisementPlacement",
+        "in": "query"
+      },
+      {
+        "name": "repeatSponsoredProducts",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/product_search/-facets-"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "facets",
+    "id": "IntelligentSearchLegacy.facets",
+    "method": "GET",
+    "path": "/api/io/_v/api/intelligent-search/facets/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      },
+      {
+        "name": "hideUnavailableItems",
+        "in": "query"
+      },
+      {
+        "name": "removeHiddenFacets",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/facets/-facets-"
+  },
+  {
+    "service": "IntelligentSearchLegacy",
+    "name": "pickupPointAvailability",
+    "id": "IntelligentSearchLegacy.pickupPointAvailability",
+    "method": "GET",
+    "path": "/api/intelligent-search/v0/pickup-point-availability/{facets}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "facets",
+        "in": "path",
+        "greedy": true
+      },
+      {
+        "name": "query",
+        "in": "query"
+      },
+      {
+        "name": "locale",
+        "in": "query"
+      },
+      {
+        "name": "pickupPoint",
+        "in": "query"
+      },
+      {
+        "name": "an",
+        "in": "query"
+      },
+      {
+        "name": "coordinates",
+        "in": "query"
+      },
+      {
+        "name": "zip-code",
+        "in": "query"
+      },
+      {
+        "name": "country",
+        "in": "query"
+      },
+      {
+        "name": "deliveryZonesHash",
+        "in": "query"
+      },
+      {
+        "name": "pickupPointsHash",
+        "in": "query"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/intelligent-search-api#get-/pickup-point-availability/-facets-"
+  },
+  {
+    "service": "Checkout",
+    "name": "simulate",
+    "id": "Checkout.simulate",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForms/simulation",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "RnbBehavior",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "sc",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForms/simulation"
+  },
+  {
+    "service": "Checkout",
+    "name": "getOrCreateCart",
+    "id": "Checkout.getOrCreateCart",
+    "method": "GET",
+    "path": "/api/checkout/pub/orderForm",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "forceNewCart",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/orderForm"
+  },
+  {
+    "service": "Checkout",
+    "name": "getCart",
+    "id": "Checkout.getCart",
+    "method": "GET",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "refreshOutdatedData",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/orderForm/-orderFormId-"
+  },
+  {
+    "service": "Checkout",
+    "name": "removeAllItems",
+    "id": "Checkout.removeAllItems",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items/removeAll",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/items/removeAll"
+  },
+  {
+    "service": "Checkout",
+    "name": "clearPersonalData",
+    "id": "Checkout.clearPersonalData",
+    "method": "GET",
+    "path": "/checkout/changeToAnonymousUser/{orderFormId}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": true,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/checkout/changeToAnonymousUser/-orderFormId-"
+  },
+  {
+    "service": "Checkout",
+    "name": "updateItems",
+    "id": "Checkout.updateItems",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items/update",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "allowedOutdatedData",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/items/update"
+  },
+  {
+    "service": "Checkout",
+    "name": "addItems",
+    "id": "Checkout.addItems",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "allowedOutdatedData",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/items"
+  },
+  {
+    "service": "Checkout",
+    "name": "handleItems",
+    "id": "Checkout.handleItems",
+    "method": "PATCH",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#patch-/api/checkout/pub/orderForm/-orderFormId-/items"
+  },
+  {
+    "service": "Checkout",
+    "name": "setManualPrice",
+    "id": "Checkout.setManualPrice",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items/{itemIndex}/price",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "itemIndex",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orderForm/-orderFormId-/items/-itemIndex-/price"
+  },
+  {
+    "service": "Checkout",
+    "name": "removeManualPrice",
+    "id": "Checkout.removeManualPrice",
+    "method": "DELETE",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items/{itemIndex}/price",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "itemIndex",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#delete-/api/checkout/pub/orderForm/-orderFormId-/items/-itemIndex-/price"
+  },
+  {
+    "service": "Checkout",
+    "name": "splitItem",
+    "id": "Checkout.splitItem",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items/{itemUniqueId}/split",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "itemUniqueId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/items/-itemUniqueId-/split"
+  },
+  {
+    "service": "Checkout",
+    "name": "ignoreProfileData",
+    "id": "Checkout.ignoreProfileData",
+    "method": "PATCH",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/profile",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#patch-/api/checkout/pub/orderForm/-orderFormId-/profile"
+  },
+  {
+    "service": "Checkout",
+    "name": "getClientProfile",
+    "id": "Checkout.getClientProfile",
+    "method": "GET",
+    "path": "/api/checkout/pub/profiles",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "email",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "ensureComplete",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/profiles"
+  },
+  {
+    "service": "Checkout",
+    "name": "setClientProfile",
+    "id": "Checkout.setClientProfile",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/clientProfileData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/clientProfileData"
+  },
+  {
+    "service": "Checkout",
+    "name": "setShippingData",
+    "id": "Checkout.setShippingData",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/shippingData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/shippingData"
+  },
+  {
+    "service": "Checkout",
+    "name": "setClientPreferences",
+    "id": "Checkout.setClientPreferences",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/clientPreferencesData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/clientPreferencesData"
+  },
+  {
+    "service": "Checkout",
+    "name": "setMarketingData",
+    "id": "Checkout.setMarketingData",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/marketingData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/marketingData"
+  },
+  {
+    "service": "Checkout",
+    "name": "setPaymentData",
+    "id": "Checkout.setPaymentData",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/paymentData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/paymentData"
+  },
+  {
+    "service": "Checkout",
+    "name": "addItemAttachment",
+    "id": "Checkout.addItemAttachment",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items/{itemIndex}/attachments/{attachmentName}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "itemIndex",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "attachmentName",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/items/-itemIndex-/attachments/-attachmentName-"
+  },
+  {
+    "service": "Checkout",
+    "name": "removeItemAttachment",
+    "id": "Checkout.removeItemAttachment",
+    "method": "DELETE",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/items/{itemIndex}/attachments/{attachmentName}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "itemIndex",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "attachmentName",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#delete-/api/checkout/pub/orderForm/-orderFormId-/items/-itemIndex-/attachments/-attachmentName-"
+  },
+  {
+    "service": "Checkout",
+    "name": "setSubscriptionData",
+    "id": "Checkout.setSubscriptionData",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/subscriptionData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/subscriptionData"
+  },
+  {
+    "service": "Checkout",
+    "name": "removeSubscriptionData",
+    "id": "Checkout.removeSubscriptionData",
+    "method": "DELETE",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/subscriptionData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#delete-/api/checkout/pub/orderForm/-orderFormId-/attachments/subscriptionData"
+  },
+  {
+    "service": "Checkout",
+    "name": "setMerchantContextData",
+    "id": "Checkout.setMerchantContextData",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/merchantContextData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/merchantContextData"
+  },
+  {
+    "service": "Checkout",
+    "name": "setInvoiceData",
+    "id": "Checkout.setInvoiceData",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/attachments/invoiceData",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/attachments/invoiceData"
+  },
+  {
+    "service": "Checkout",
+    "name": "setCustomData",
+    "id": "Checkout.setCustomData",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customData/{appId}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "appId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orderForm/-orderFormId-/customData/-appId-"
+  },
+  {
+    "service": "Checkout",
+    "name": "setCustomField",
+    "id": "Checkout.setCustomField",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customData/{appId}/{appFieldName}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "appId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "appFieldName",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orderForm/-orderFormId-/customData/-appId-/-appFieldName-"
+  },
+  {
+    "service": "Checkout",
+    "name": "removeCustomField",
+    "id": "Checkout.removeCustomField",
+    "method": "DELETE",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customData/{appId}/{appFieldName}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "appId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "appFieldName",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#delete-/api/checkout/pub/orderForm/-orderFormId-/customData/-appId-/-appFieldName-"
+  },
+  {
+    "service": "Checkout",
+    "name": "setCustomFields",
+    "id": "Checkout.setCustomFields",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customFields",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orderForm/-orderFormId-/customFields"
+  },
+  {
+    "service": "Checkout",
+    "name": "setOrderCustomField",
+    "id": "Checkout.setOrderCustomField",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customFields/order",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orderForm/-orderFormId-/customFields/order"
+  },
+  {
+    "service": "Checkout",
+    "name": "setItemCustomField",
+    "id": "Checkout.setItemCustomField",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customFields/item/{itemId}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "itemId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orderForm/-orderFormId-/customFields/item/-itemId-"
+  },
+  {
+    "service": "Checkout",
+    "name": "removeItemCustomField",
+    "id": "Checkout.removeItemCustomField",
+    "method": "DELETE",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customFields/item/{itemId}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "itemId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "fieldName",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#delete-/api/checkout/pub/orderForm/-orderFormId-/customFields/item/-itemId-"
+  },
+  {
+    "service": "Checkout",
+    "name": "setAddressCustomField",
+    "id": "Checkout.setAddressCustomField",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/customFields/address/{addressId}",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "addressId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orderForm/-orderFormId-/customFields/address/-addressId-"
+  },
+  {
+    "service": "Checkout",
+    "name": "clearMessages",
+    "id": "Checkout.clearMessages",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/messages/clear",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/messages/clear"
+  },
+  {
+    "service": "Checkout",
+    "name": "getInstallments",
+    "id": "Checkout.getInstallments",
+    "method": "GET",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/installments",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path"
+      },
+      {
+        "name": "paymentSystem",
+        "in": "query",
+        "style": "form",
+        "explode": true
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/orderForm/-orderFormId-/installments"
+  },
+  {
+    "service": "Checkout",
+    "name": "addCoupons",
+    "id": "Checkout.addCoupons",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/coupons",
+    "origin": "store",
+    "kind": "cart",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/coupons"
+  },
+  {
+    "service": "Checkout",
+    "name": "getPickupPoints",
+    "id": "Checkout.getPickupPoints",
+    "method": "GET",
+    "path": "/api/checkout/pub/pickup-points",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "geoCoordinates",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "postalCode",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "countryCode",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/pickup-points"
+  },
+  {
+    "service": "Checkout",
+    "name": "getAddress",
+    "id": "Checkout.getAddress",
+    "method": "GET",
+    "path": "/api/checkout/pub/postal-code/{countryCode}/{postalCode}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "countryCode",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "postalCode",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/postal-code/-countryCode-/-postalCode-"
+  },
+  {
+    "service": "Checkout",
+    "name": "placeOrderFromCart",
+    "id": "Checkout.placeOrderFromCart",
+    "method": "POST",
+    "path": "/api/checkout/pub/orderForm/{orderFormId}/transaction",
+    "origin": "store",
+    "kind": "order",
+    "parameters": [
+      {
+        "name": "orderFormId",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/transaction"
+  },
+  {
+    "service": "Checkout",
+    "name": "placeOrder",
+    "id": "Checkout.placeOrder",
+    "method": "PUT",
+    "path": "/api/checkout/pub/orders",
+    "origin": "store",
+    "kind": "order",
+    "parameters": [
+      {
+        "name": "sc",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": true,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#put-/api/checkout/pub/orders"
+  },
+  {
+    "service": "Checkout",
+    "name": "processOrder",
+    "id": "Checkout.processOrder",
+    "method": "POST",
+    "path": "/api/checkout/pub/gatewayCallback/{orderGroup}",
+    "origin": "store",
+    "kind": "order",
+    "parameters": [
+      {
+        "name": "orderGroup",
+        "in": "path",
+        "style": "simple"
+      },
+      {
+        "name": "Cookie",
+        "in": "header",
+        "style": "simple"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": true,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/gatewayCallback/-orderGroup-"
+  },
+  {
+    "service": "Checkout",
+    "name": "getRegions",
+    "id": "Checkout.getRegions",
+    "method": "GET",
+    "path": "/api/checkout/pub/regions/{regionId}",
+    "origin": "store",
+    "kind": "read",
+    "parameters": [
+      {
+        "name": "regionId",
+        "in": "path",
+        "style": "simple",
+        "optionalPath": true
+      },
+      {
+        "name": "country",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "postalCode",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "geoCoordinates",
+        "in": "query",
+        "style": "form"
+      },
+      {
+        "name": "individualShippingEstimates",
+        "in": "query",
+        "style": "form"
+      }
+    ],
+    "body": false,
+    "emptyResponse": false,
+    "documentation": "https://developers.vtex.com/docs/api-reference/checkout-api#get-/api/checkout/pub/regions/-regionId-"
+  },
+  {
+    "service": "Payments",
+    "name": "sendPayments",
+    "id": "Payments.sendPayments",
+    "method": "POST",
+    "path": "/api/payments/transactions/{transactionId}/payments",
+    "origin": "payments",
+    "kind": "payment",
+    "parameters": [
+      {
+        "name": "an",
+        "in": "query",
+        "style": "form",
+        "explode": true
+      },
+      {
+        "name": "orderId",
+        "in": "query",
+        "style": "form",
+        "explode": true
+      },
+      {
+        "name": "transactionId",
+        "in": "path",
+        "style": "simple"
+      }
+    ],
+    "body": true,
+    "emptyResponse": true,
+    "documentation": "https://developers.vtex.com/docs/api-reference/payments-gateway-api#post-/api/payments/transactions/-transactionId-/payments"
+  }
+]

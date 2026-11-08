@@ -1,0 +1,12 @@
+export * as Checkout from "./Checkout.js";
+export * as IntelligentSearch from "./IntelligentSearch.js";
+export * as IntelligentSearchLegacy from "./IntelligentSearchLegacy.js";
+export * as LegacySearch from "./LegacySearch.js";
+export * as Payments from "./Payments.js";
+export * as Catalog from "./Catalog.js";
+export * as Vtex from "./VtexClient.js";
+export * as Errors from "./Errors.js";
+export { VtexClient } from "./VtexClient.js";
+export { VtexConfig } from "./Config.js";
+export type { VtexOptions, VtexConfiguration } from "./Config.js";
+export type { Operation, OperationDefinition } from "./Operation.js";

@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/vtex/openapi-schemas",
+  "commit": "0475f5c855b7f03a593b781461356c4feaa550f5",
+  "sources": [
+    {
+      "file": "VTEX - Checkout API.json",
+      "blob": "57efcfa4744689cedde75c3c224f9866125b7939"
+    },
+    {
+      "file": "VTEX - Intelligent Search API - v1.json",
+      "blob": "6df2619f7fa57a6de56bc7f009dcd081f60b0e1b"
+    },
+    {
+      "file": "VTEX - Intelligent Search API.json",
+      "blob": "67b6365260b6a9c4f06c256e9a1f580fa9ecd9cb"
+    },
+    {
+      "file": "VTEX - Payments Gateway API.json",
+      "blob": "3e3d8e4b4343f6b8a757a279dae3d3ed5c8d2443"
+    },
+    {
+      "file": "VTEX - Search API.json",
+      "blob": "611bc110bfde2db0f159f2833cd84158cc20a4cb"
+    }
+  ]
+}

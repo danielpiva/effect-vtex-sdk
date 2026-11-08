@@ -1,0 +1,14 @@
+effect-vtex-sdk
+Original runtime and generator implementation: Copyright 2026 Daniel Piva.
+
+API definitions and their upstream examples originate from:
+https://github.com/vtex/openapi-schemas
+Pinned commit: 0475f5c855b7f03a593b781461356c4feaa550f5
+Upstream snapshots retain their original authorship; this package's MIT
+license does not relicense third-party material.
+
+Architectural inspiration: https://github.com/alchemy-run/distilled
+No Distilled source code is copied or included as a dependency.
+
+VTEX, Super Muffato and Distilled are trademarks of their respective owners.
+This project is independent and is not endorsed by them.

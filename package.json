@@ -1,0 +1,36 @@
+{
+  "name": "effect-vtex-sdk",
+  "version": "0.1.0",
+  "description": "Effect-native, schema-driven VTEX storefront APIs: search, checkout and public payments.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Daniel Piva",
+  "repository": { "type": "git", "url": "git+https://github.com/danielpiva/effect-vtex-sdk.git" },
+  "homepage": "https://github.com/danielpiva/effect-vtex-sdk#readme",
+  "bugs": { "url": "https://github.com/danielpiva/effect-vtex-sdk/issues" },
+  "keywords": ["vtex", "effect", "sdk", "ecommerce", "checkout"],
+  "sideEffects": false,
+  "engines": { "node": ">=22" },
+  "files": ["dist", "src", "docs", "README.md", "LICENSE", "NOTICE"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./*": { "types": "./dist/*.d.ts", "import": "./dist/*.js" }
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "generate:check": "node scripts/generate.mjs --check",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
+    "build": "tsc",
+    "test": "vitest run",
+    "check": "npm run generate:check && npm run typecheck && npm test && npm run build",
+    "smoke": "npm run build && node --env-file-if-exists=.env examples/smoke.mjs",
+    "prepack": "npm run check"
+  },
+  "peerDependencies": { "effect": "^4.1.2" },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "effect": "4.1.2",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  }
+}
