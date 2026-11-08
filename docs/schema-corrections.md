@@ -20,5 +20,7 @@ Upstream: [vtex/openapi-schemas at 0475f5c](https://github.com/vtex/openapi-sche
 | Intelligent Search | Keep v1 and legacy route spellings separate, with the legacy pickup endpoint under `/api/intelligent-search/v0`. | Per-route upstream server overrides are not interchangeable. |
 | Geocoordinates | Use numbers, including fractions, for `geoCoordinates`. | The postal-code endpoint returned real longitude/latitude values while its schema declared integers. |
 | Tax | `taxPercentage` may be null. | Observed in the public Muffato Intelligent Search response. |
+| Checkout channel | Expose `sc` on cart creation and reads. | The shopper session must carry the explicitly selected storefront sales channel. |
+| Cart messages | Accept both strings and `{ code, status, text }` messages. | Checkout warning payloads use structured messages even though the snapshot declares strings. |
 
 Store-specific authentication, supported payment systems, custom fields and response variations should be added with focused fixtures. Avoid weakening every response to `unknown` to accommodate a single mismatch.

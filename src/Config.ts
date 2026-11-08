@@ -2,6 +2,7 @@ import * as Context from "effect/Context";
 import * as Effect from "effect/Effect";
 import * as Layer from "effect/Layer";
 import type * as Redacted from "effect/Redacted";
+import type * as Cookies from "effect/http/Cookies";
 import { ConfigurationError } from "./Errors.js";
 
 export interface VtexOptions {
@@ -12,6 +13,7 @@ export interface VtexOptions {
   readonly paymentsBaseUrl?: string;
   /** Optional browser Cookie header; seeded for the store's host only. */
   readonly cookie?: Redacted.Redacted<string>;
+  readonly initialCookies?: Redacted.Redacted<ReadonlyArray<Cookies.Cookie>>;
   readonly timeoutMs?: number;
   readonly maxReadRetries?: number;
   readonly retryDelayMs?: number;
@@ -22,6 +24,7 @@ export interface VtexConfiguration {
   readonly baseUrl: string;
   readonly paymentsBaseUrl: string | undefined;
   readonly cookie: Redacted.Redacted<string> | undefined;
+  readonly initialCookies: Redacted.Redacted<ReadonlyArray<Cookies.Cookie>> | undefined;
   readonly timeoutMs: number;
   readonly maxReadRetries: number;
   readonly retryDelayMs: number;
@@ -62,6 +65,7 @@ export const configuration = (options: VtexOptions): Effect.Effect<VtexConfigura
         paymentsBaseUrl: options.paymentsBaseUrl !== undefined ? origin(options.paymentsBaseUrl) :
           options.account !== undefined ? `https://${options.account}.vtexpayments.com.br` : undefined,
         cookie: options.cookie,
+        initialCookies: options.initialCookies,
       };
     },
     catch: () => new ConfigurationError({ message: "Invalid VTEX configuration: use HTTP(S) origins, a valid account, and nonnegative integer retry settings." }),

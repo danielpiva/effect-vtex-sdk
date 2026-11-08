@@ -33,7 +33,7 @@ const retryAfter = (value: string | undefined, now: number): number | undefined 
 export const layer = Layer.effect(VtexClient, Effect.gen(function*() {
   const config = yield* VtexConfig;
   const http = yield* HttpClient.HttpClient;
-  const initial: Cookies.Cookie[] = [];
+  const initial: Cookies.Cookie[] = config.initialCookies ? [...Redacted.value(config.initialCookies)] : [];
   if (config.cookie !== undefined) {
     const hostname = new URL(config.baseUrl).hostname;
     for (const [name, value] of Object.entries(Cookies.parseHeader(Redacted.value(config.cookie)))) {

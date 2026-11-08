@@ -1128,6 +1128,10 @@
         "name": "individualShippingEstimates",
         "in": "query",
         "style": "form"
+      },
+      {
+        "name": "sc",
+        "in": "query"
       }
     ],
     "body": false,
@@ -1157,6 +1161,10 @@
         "name": "individualShippingEstimates",
         "in": "query",
         "style": "form"
+      },
+      {
+        "name": "sc",
+        "in": "query"
       }
     ],
     "body": false,

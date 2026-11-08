@@ -6,6 +6,8 @@ export * as Payments from "./Payments.js";
 export * as Catalog from "./Catalog.js";
 export * as Vtex from "./VtexClient.js";
 export * as Errors from "./Errors.js";
+export * as Shopping from "./Shopping.js";
+export * as ShoppingTools from "./ShoppingTools.js";
 export { VtexClient } from "./VtexClient.js";
 export { VtexConfig } from "./Config.js";
 export type { VtexOptions, VtexConfiguration } from "./Config.js";

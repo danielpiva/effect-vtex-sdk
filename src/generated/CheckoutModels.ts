@@ -40,10 +40,12 @@ export const SimulateOutput: S.Codec<SimulateOutput> = S.suspend(() => S.StructW
 export type GetOrCreateCartInput = {
   readonly "forceNewCart"?: boolean;
   readonly "individualShippingEstimates"?: boolean;
+  readonly "sc"?: string;
 };
 export const GetOrCreateCartInput: S.Codec<GetOrCreateCartInput> = S.suspend(() => S.Struct({
   "forceNewCart": S.optional(S.Boolean),
   "individualShippingEstimates": S.optional(S.Boolean),
+  "sc": S.optional(S.String),
 })) as S.Codec<GetOrCreateCartInput>;
 
 export type GetOrCreateCartOutput = OrderForm;
@@ -53,11 +55,13 @@ export type GetCartInput = {
   readonly "orderFormId": string;
   readonly "refreshOutdatedData"?: boolean;
   readonly "individualShippingEstimates"?: boolean;
+  readonly "sc"?: string;
 };
 export const GetCartInput: S.Codec<GetCartInput> = S.suspend(() => S.Struct({
   "orderFormId": S.String,
   "refreshOutdatedData": S.optional(S.Boolean),
   "individualShippingEstimates": S.optional(S.Boolean),
+  "sc": S.optional(S.String),
 })) as S.Codec<GetCartInput>;
 
 export type RemoveAllItemsInput = {
@@ -913,7 +917,7 @@ export type OrderForm = {
   readonly "userType"?: (string | null);
   readonly "ignoreProfileData"?: boolean;
   readonly "value": number;
-  readonly "messages"?: ReadonlyArray<string>;
+  readonly "messages"?: ReadonlyArray<(string | OrderFormMessagesItemVariant2)>;
   readonly "items": ReadonlyArray<OrderFormItemsItem>;
   readonly "selectableGifts"?: ReadonlyArray<string>;
   readonly "totalizers"?: ReadonlyArray<RemoveManualPriceOutput>;
@@ -951,7 +955,7 @@ export const OrderForm: S.Codec<OrderForm> = S.suspend(() => S.StructWithRest(S.
   "userType": S.optional(S.NullOr(S.String)),
   "ignoreProfileData": S.optional(S.Boolean),
   "value": S.Number.check(S.isInt()),
-  "messages": S.optional(S.Array(S.String)),
+  "messages": S.optional(S.Array(S.Union([S.String, OrderFormMessagesItemVariant2]))),
   "items": S.Array(OrderFormItemsItem),
   "selectableGifts": S.optional(S.Array(S.String)),
   "totalizers": S.optional(S.Array(RemoveManualPriceOutput)),
@@ -1859,6 +1863,18 @@ export type SimulateOutputLogisticsInfoItemItemMetadata = {
 export const SimulateOutputLogisticsInfoItemItemMetadata: S.Codec<SimulateOutputLogisticsInfoItemItemMetadata> = S.suspend(() => S.StructWithRest(S.Struct({
   "items": S.optional(S.Array(SimulateOutputLogisticsInfoItemItemMetadataItemsItem)),
 }), [S.Record(S.String, S.Unknown)])) as S.Codec<SimulateOutputLogisticsInfoItemItemMetadata>;
+
+export type OrderFormMessagesItemVariant2 = {
+  readonly "code"?: string;
+  readonly "status"?: string;
+  readonly "text"?: string;
+  readonly [key: string]: unknown;
+};
+export const OrderFormMessagesItemVariant2: S.Codec<OrderFormMessagesItemVariant2> = S.suspend(() => S.StructWithRest(S.Struct({
+  "code": S.optional(S.String),
+  "status": S.optional(S.String),
+  "text": S.optional(S.String),
+}), [S.Record(S.String, S.Unknown)])) as S.Codec<OrderFormMessagesItemVariant2>;
 
 export type OrderFormItemsItem = {
   readonly "uniqueId"?: string;
