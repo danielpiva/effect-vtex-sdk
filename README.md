@@ -31,6 +31,39 @@ npm pack
 
 ESM. Node 22+, Bun, and runtimes with Fetch. Browser use remains subject to the store's CORS and cookie policies. Server runtimes provide the most predictable session behavior.
 
+## Shopping CLI and MCP
+
+Version 0.2 adds `vtex-shop`, built with Effect CLI and Effect MCP. After installing the tarball, or running `npm link` from a built checkout:
+
+```sh
+vtex-shop init 'https://www.supermuffato.com.br/?sc=34'
+vtex-shop search 'lasanha' --sort price --limit 8
+vtex-shop search 'refeição' --microwave-only --max-price 20
+vtex-shop product PRODUCT_ID
+vtex-shop basket add SKU_ID --quantity 2
+vtex-shop basket show
+vtex-shop basket quote
+vtex-shop basket sync
+vtex-shop cart show
+```
+
+The basket is a private local draft. Only `basket sync` changes a remote cart. It creates a separate cart owned by the profile and reconciles quantities on subsequent runs. Unmanaged remote lines are preserved. A successful sync means managed quantities match the draft, not that payment or delivery is complete.
+
+Use `--json` for structured output, `--profile NAME` for another session, and `--state-dir PATH` to isolate state. Default state is `~/.local/state/vtex-shop/default/state.json`, stored with mode 0600 in a directory with mode 0700. This includes session cookies after a sync; keep it private.
+
+```sh
+vtex-shop tools --json
+vtex-shop call shop_search '{"query":"arroz","limit":5,"sort":"price"}' --json
+printf '%s\n' '{"tool":"shop_status","arguments":{}}' | vtex-shop batch
+vtex-shop mcp
+```
+
+`batch` executes NDJSON tool calls sequentially. For programmatic code-mode use, import `Shopping` and `ShoppingTools` and compose their Effects; both use the same service and schemas as the CLI. No JavaScript evaluation tool is exposed by the MCP server.
+
+The MCP server advertises eight tools for search, product inspection, status, local basket changes, quoting and explicit synchronization. Its stdout contains protocol traffic only. It has no order-placement or payment tool.
+
+See the [CLI design](docs/cli-design.md) and [integration guide](docs/shopping.md).
+
 ## Search
 
 ```ts

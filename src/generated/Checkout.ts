@@ -59,6 +59,10 @@ export const getOrCreateCart = makeOperation({
         "name": "individualShippingEstimates",
         "in": "query",
         "style": "form"
+      },
+      {
+        "name": "sc",
+        "in": "query"
       }
     ],
     "body": false,
@@ -94,6 +98,10 @@ export const getCart = makeOperation({
         "name": "individualShippingEstimates",
         "in": "query",
         "style": "form"
+      },
+      {
+        "name": "sc",
+        "in": "query"
       }
     ],
     "body": false,

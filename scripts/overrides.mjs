@@ -67,6 +67,7 @@ export function correctComponents(spec, service) {
     const form = spec.components.schemas.orderForm;
     form.required = ["orderFormId", "items", "value"];
     form.properties.openTextField = nullable(object({ value: string }));
+    form.properties.messages = array({ anyOf: [string, object({ code: string, status: string, text: string })] });
   }
   if (service === "LegacySearch") {
     // The fullest product response is inline, not the older `Example` component.
@@ -111,6 +112,10 @@ export function correctOperation({ service, path, method, operation, input, outp
   }
   if (service === "Checkout") {
     const body = input.properties.body;
+    if (["CreateANewCart", "GetCartInformationById"].includes(operation.operationId)) {
+      input.properties.sc = string;
+      parameters.push({ name: "sc", in: "query" });
+    }
     if (body && (body.properties && Object.keys(body.properties).length > 0 || body.type === "array" || body.$ref)) {
       input.required.push("body");
     }
